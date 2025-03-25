@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: rgb(24, 24, 27);
+  font-family: "Geist", sans-serif;
+}
+
+/**
+ * Adding `overflow: hidden` here gives the effect that
+ * the text is sliding in from from behind a layer
+ */
+.slide-container {
+  overflow: hidden;
+}
+
+.slide-container h1 {
+  color: #fff;
+  font-size: 5rem;
+  animation: slideIn 2s ease-out forwards;
+}
+
+@keyframes slideIn {
+  /* Start animation from the left edge of the h1 element */
+  /* Try removing the - sign from 100%! */
+  from {
+    transform: translateX(-100%);
+  }
+  /* Animation ends by placing the h1 element at the origin */
+  to {
+    transform: translateX(0);
+  }
+}
