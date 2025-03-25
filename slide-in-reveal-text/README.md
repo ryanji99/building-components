@@ -1,4 +1,4 @@
-## Slide-In Reveal Text
+## Login Form
 
 You can view the CodePen here:
-[View CodePen](https://codepen.io/ryanji99/pen/yyLqyKO)
+[Login Form](https://codepen.io/ryanji99/pen/KwKBpda)
